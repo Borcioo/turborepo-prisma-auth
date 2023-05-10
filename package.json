@@ -1,5 +1,5 @@
 {
-  "name": "foreto-turbo-cms",
+  "name": "turborepo-prisma-auth-boiler",
   "private": true,
   "scripts": {
     "build": "dotenv -- turbo run build",
