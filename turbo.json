@@ -1,15 +1,22 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": ["^build", "^prisma:g"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
     "lint": {},
     "dev": {
+      "dependsOn": ["^prisma:g"],
+      "outputs": ["dist/**", ".next/**", "!.next/cache/**"],
       "cache": false,
       "persistent": true
+    },
+    "prisma:g": {
+      "cache": false
+    },
+    "prisma:p": {
+      "cache": false
     }
   }
 }
