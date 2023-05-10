@@ -52,6 +52,22 @@ cd my-turborepo
 pnpm dev
 ```
 
+### Env
+
+(mongodb connection url)
+
+```
+DATABASE_URL=
+NODE_ENV="development"
+
+
+EMAIL_SERVER_USER=
+EMAIL_SERVER_PASSWORD=
+EMAIL_SERVER_HOST=
+EMAIL_SERVER_PORT=
+EMAIL_FROM=
+```
+
 ## Useful Links
 
 Learn more about the power of Turborepo:
