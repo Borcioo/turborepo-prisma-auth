@@ -11,8 +11,8 @@
   "dependencies": {
     "@mui/icons-material": "^5.11.16",
     "auth-config": "workspace:*",
-    "next": "^13.4.1",
-    "next-auth": "^4.22.1",
+    "next": "^14.2.35",
+    "next-auth": "^4.24.12",
     "prisma-database": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
